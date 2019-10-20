@@ -1,0 +1,9 @@
+action (search_nearest) {
+  description (search nearest hospital/pharmacy from current location)
+  collect {
+    input-group {
+      
+    }
+  }
+  output (__OUTPUT__)
+}

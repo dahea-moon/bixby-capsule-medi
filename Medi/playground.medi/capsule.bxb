@@ -1,0 +1,44 @@
+capsule {
+  id (playground.medi)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+  }
+  runtime-flags {
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+    no-filtering-with-validation
+    use-input-views-for-selection-list-detail
+  }
+  store-sections{
+    section (HealthAndFitness)
+    section (Local)
+  }
+  capsule-imports{
+    import (viv.core) {
+      as (core)
+    }
+    import (viv.entity) {
+      as (entity)
+      version (3.21.0)
+    }
+    import (viv.time) {
+      as (time)
+      version-from (entity)
+    }
+    import (viv.geo) {
+      as (geo)
+      version-from (entity)
+    }
+    import (viv.location) {
+      as (location)
+      version (1.0.19)
+    }
+    import (viv.measurement) {
+      as (measure)
+      version-from (geo)
+    }
+  }
+}

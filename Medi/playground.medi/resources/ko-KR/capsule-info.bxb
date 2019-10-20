@@ -1,0 +1,9 @@
+capsule-info {
+  display-name (메디(MEDI))
+  developer-name (SOL_MOON)
+  icon-asset (icon.png)
+  dispatch-aliases{
+    alias (메디)
+  }
+  description ("가까이 있는 병원과 약국을 찾아보세요")
+}
