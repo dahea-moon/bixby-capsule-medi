@@ -3,9 +3,8 @@ from django.db import models
 class Pharmacy(models.Model):
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
-    place = models.CharField(max_length=100, null=True, blank=True)
-    longt = models.FloatField()
-    langt = models.FloatField()
+    longt = models.CharField(max_length=100)
+    langt = models.CharField(max_length=100)
     call = models.CharField(max_length=100)
     duty1 = models.BooleanField()
     duty2 = models.BooleanField()
