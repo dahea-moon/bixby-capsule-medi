@@ -2,7 +2,7 @@ import requests
 import csv
 
 
-f = open('nursing2.csv', 'r', encoding='utf-8-sig')
+f = open('emergency3.csv', 'r', encoding='utf-8-sig')
 reader = csv.DictReader(f)
 i = 0
 for row in reader:
@@ -33,4 +33,4 @@ for row in reader:
             data['duty'+day[1]+'_close'] = closetime
     print(i)
     # print(data)
-    r = requests.get('http://127.0.0.1:8000/api/nursing/collectdata/', data)
+    r = requests.get('http://127.0.0.1:8000/api/emergency/collectdata/', data)

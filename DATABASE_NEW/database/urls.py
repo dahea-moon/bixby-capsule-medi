@@ -6,7 +6,7 @@ urlpatterns = [
     path('api/AED/', include('AED.urls')),
     path('api/sooyusil/', include('sooyusil.urls')),
     path('api/pharmacy/', include('pharmacy.urls')),
-    # path('api/emergency/', include('emergency.urls')),
+    path('api/emergency/', include('emergency.urls')),
     path('api/anal/', include('anal.urls')),
     path('api/bone/', include('bone.urls')),
     path('api/child/', include('child.urls')),
