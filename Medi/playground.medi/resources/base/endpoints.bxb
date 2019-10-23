@@ -1,23 +1,9 @@
 endpoints {
   action-endpoints {
     action-endpoint (search_nearest) {
-      accepted-inputs (__LIST_OF_ACTION_INPUTS__)
+      accepted-inputs (Where)
       local-endpoint (search_nearest.js)
     }
-
-    action-endpoint (search_by_day) {
-      accepted-inputs (__LIST_OF_ACTION_INPUTS__)
-      local-endpoint (search_by_day.js)
-      }
-    
-    action-endpoint (search_by_place) {
-      accepted-inputs (__LIST_OF_ACTION_INPUTS__)
-      local-endpoint (search_by_place.js)
-      }
-    
-    action-endpoint (search_by_time) {
-      accepted-inputs (__LIST_OF_ACTION_INPUTS__)
-      local-endpoint (search_by_time.js)
       }
     }
   }

@@ -1,9 +1,0 @@
-action (search_by_day) {
-  description (search opening hospital/pharmacy on specific day)
-  collect {
-    input-group {
-      re
-    }
-  }
-  output (__OUTPUT__)
-}

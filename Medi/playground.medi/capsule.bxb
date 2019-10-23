@@ -30,7 +30,7 @@ capsule {
     }
     import (viv.geo) {
       as (geo)
-      version-from (entity)
+      version (9.21.0)
     }
     import (viv.location) {
       as (location)
@@ -40,5 +40,8 @@ capsule {
       as (measure)
       version-from (geo)
     }
+  }
+  permissions {
+    user-profile-access
   }
 }

@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'mental',
     'moonlight',
     'nerve',
+    'nose',
+    'nursing',
     'oriental',
     'plastic',
     'public_health',
