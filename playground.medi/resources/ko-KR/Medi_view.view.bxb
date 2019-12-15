@@ -1,0 +1,35 @@
+// 결과 화면에 대한 보여주는 방식을 설정 (https://bixbydevelopers.com/dev/docs/reference/type/result-view)
+result-view {
+  // 결과 화면을 보여주고 싶은 output concept을 지정
+  match: Nearests (this)
+  
+  message {
+    // 결과 화면에 보여줄 dialog를 설정
+    if(!exists(this)){
+      template ("조건에 맞는 기관을 찾을 수 없어요.")
+    }else{
+      template ("결과를 확인하세요.") 
+    }
+    
+  }
+  
+  render {
+    if (size(this) == 1) {
+      layout-macro (nearest_result) {
+        param (info) {
+          expression (this) 
+        }
+      }    
+    }else {
+      list-of (this) {
+        where-each (info) {
+          layout-macro (nearest_result) {
+            param (info) {
+              expression (info)
+            }
+          }
+        }
+      }
+    }
+  }
+}

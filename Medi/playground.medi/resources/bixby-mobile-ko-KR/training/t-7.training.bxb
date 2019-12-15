@@ -1,5 +1,0 @@
-train (t-7wxh2p7yncxiitphcol09rsys) {
-  utterance ("[g:Hospital] (가장 가까운)[r:search_nearest] (치과)[v:Where] 찾아줘")
-  plan (Y2BhkCjISaxML8ovzUvRy01NydTzyC8uyCxJzGGQQ5cpTk0sSs6IzwNSqcUlDKLo8uEZqUWpDOJlmWV66an5es6lRUWpeSU++cmJJZn5eQzMDIwMTECSAUiDIASA+EwgHgA=)
-  last-modified (1571814127640)
-}

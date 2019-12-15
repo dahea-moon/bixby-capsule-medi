@@ -1,0 +1,19 @@
+action (searchBasedonDestination) {
+  description (사용자가 말한 위치를 기반으로 탐색)
+  type (Search)
+  collect {
+    input (destination) {
+      type (geo.SearchRegion)
+      min (Required) max (One)
+      default-select {
+            with-learning
+          } 
+    }
+    input (where){
+      type (Where)
+      min (Required) max (One)
+    }
+    
+  }
+  output (Nearests)
+}

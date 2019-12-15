@@ -1,0 +1,4 @@
+structure (Destination) {
+  description (사용자가 찾고 싶은 지역)
+  role-of (geo.NamedPoint)
+}

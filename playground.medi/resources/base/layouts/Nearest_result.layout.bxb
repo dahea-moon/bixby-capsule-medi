@@ -1,0 +1,67 @@
+layout-macro-def (nearest_result) {
+  params {
+    param (info) {
+      type (Nearests)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    compound-card {
+      content {
+        map-card {
+          title-area {
+            slot1 {
+              text {
+                value ("#{value(info.name)}")
+                style (Title_S)
+              }
+            }
+          }
+          markers {
+            marker {
+              geo (info.location)
+              icon ("/img/icons/red-map-marker.png")
+              width (20)
+              height (20)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+            marker {
+              geo (info.curlocation)
+              icon ("/img/icons/green-map-marker.png")
+              width (15)
+              height (20)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+          }
+        }
+        single-line {
+          text {
+            value ("#{value(info.address)}")
+          }
+        }
+        single-line {
+          text {
+            value ("#{value(info.call)}")
+          }
+        }
+        single-line {
+          text {
+            value ("평일: #{value(info.open)} ~ #{value(info.close)}")
+          }
+        }
+        single-line {
+          text {
+            value ("공휴일: #{value(info.holiday_open)} ~ #{value(info.holiday_close)}")
+          }
+        }   
+      }
+    }
+    
+  }
+}
+    

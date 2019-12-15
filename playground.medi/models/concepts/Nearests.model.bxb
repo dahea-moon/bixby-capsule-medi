@@ -1,0 +1,47 @@
+structure (Nearests) {
+  description (가장 가까운 기관)
+  property (name) {
+    type (Name)
+    min (Optional) max (One)
+  }
+  property (manager) {
+    type (Manager)
+    min (Optional) max (One)
+  }
+  property (address) {
+    type (Address)
+    min (Required) max (One)
+  }
+  property (call) {
+    type (Call)
+    min (Optional) max (One)
+  }
+  property (open) { 
+    type (Open)
+    min (Optional) max (One)
+  }
+  property (close) {
+    type (Close)
+    min (Optional) max (One)
+  }
+  property (holiday_open) {
+    type (Holiday_open)
+    min (Optional) max (One)
+  }
+  property (holiday_close) {
+    type (Holiday_close)
+    min (Optional) max (One)
+  }
+  property (place) {
+    type (Place)
+    min (Optional) max (One)
+  }
+  property (location) {
+    type (Location)
+    min (Optional) max (One)
+  }
+  property (curlocation) {
+    type (Curlocation)
+    min (Optional) max (One)
+  }
+}

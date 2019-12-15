@@ -1,0 +1,23 @@
+action (search_nearest) {
+  description (search nearest)
+  type(Search)
+  collect {
+    computed-input (curlocation) {
+      type (geo.CurrentLocation)
+      min (Required)
+      compute {
+        if ($user.currentLocation.$exists) {
+          intent {
+            goal: geo.GeoPoint
+            value-set: geo.CurrentLocation {$expr($user.currentLocation)}
+          }
+        }
+      }
+    }
+    input (where){
+      type (Where)
+      min (Required) max (One)
+    }
+  }
+  output (Nearests)
+}

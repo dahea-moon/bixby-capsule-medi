@@ -1,0 +1,11 @@
+structure (Final) {
+  description (__DESCRIPTION__)
+  property (nearests) {
+    type(Nearests)
+    min (Required) max (One)
+  }
+  property (location) {
+    type (Location)
+    min (Required) max (One)
+  }
+}

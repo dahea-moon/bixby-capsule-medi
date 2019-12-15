@@ -1,3 +1,1 @@
-# bixby-emergency
-bixby capsule project 
-medi
+# playground.medi

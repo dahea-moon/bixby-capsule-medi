@@ -1,0 +1,7 @@
+enum (Near) {
+  symbol (근처)
+  symbol (주변)
+  symbol (가까운)
+  symbol (주위)
+  symbol (가장 가까운)
+}

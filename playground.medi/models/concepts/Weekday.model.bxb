@@ -1,0 +1,10 @@
+enum (Weekday) {
+  description (사용자가 찾고 싶은 요일)
+  symbol (월요일)
+  symbol (화요일)
+  symbol (수요일)
+  symbol (목요일)
+  symbol (금요일)
+  symbol (토요일)
+  symbol (일요일)
+}
