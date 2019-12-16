@@ -1,0 +1,10 @@
+train (t-w3hapn4tcqbistios7gjozvsp) {
+  utterance ("[g:searchBasedonDestinationWeekday] (강남역)[v:geo.PlaceName] (토요일)[v:Weekday:토요일] (약국)[v:Where:약국] 찾아줘")
+  plan (bYzLCsIwEEVvtT62iij6EQF/QVyX4sb1kIwmWBNp2oAbv93UmlU7WQz3nDvBEgdN1e3VWqlV68STlREFU82+8TgOnY9O6hN5Vs6eY8tYaoyzV+aHojf2w5OkdiNKc81YBxPEnZ0oKNLSGdtgk9iFvasClxVJxnaMfgirxH+g+wYLZJhgihwzzGNCzN3rc4Z+0s7/7dj7Ag==)
+  last-modified (1576484328563)
+}
+train (t-whxqls9u52ka16vyi2gbqikk7) {
+  utterance ("[g:searchBasedonDestination] (광진구)[v:geo.SubLocalityOneName] (응급실)[v:Where:응급실] 어디있어")
+  plan (dY67CsJAEEVvfNtaKFj4ARbp/AAfWIkKFtZrdjQDyaxkNwH/3lEJKmI3c86dB/oYpyY7X0tJUlu6OCfL8ZZMQT54TH+dV5ekC+PJOllpisUEdoLRb/aYUkEYVFzFF3Lx1ijdO5aAWc2WTnwoyiS85bpw+dzmLKxGd1e04or948akHvvjh7U/lKeNS0zG4bYTwrjmaxb7z33zxz/oIUIDTbTQRgdd7aEk+iAR8GRQ9qqbzxlN3gE=)
+  last-modified (1576486186171)
+}

@@ -1,0 +1,5 @@
+train (t-nsi4eyjiz7jgtotngfu3pg6s5) {
+  utterance ("[g:searchBasedonDestination] (뚝섬역)[v:geo.PlaceName] (종합병원)[v:Where:종합병원] 알려줘")
+  plan (bYy9DgIhEIQHz59aYzTxESx4CGN9udhYb2AVEgRzcJQ+u4hedW41882XxQoHQ+72HLwyegjywdrKlqnnmCKO0y2WTZkTRdbBn4tlPSUbPPZT92q4Z2yyzfLOQbZUaBesT9iO7MIxuMydI8XY/aMvwnrkFXzeYAmBGRrMsSgZpYlfE0Dt32uqV4w3)
+  last-modified (1576484295316)
+}

@@ -2,12 +2,11 @@ var http = require('http');
 var config = require('config');
 var console = require('console');
 var tool = require('lib/tool.js');
-var weekdayTool = require('lib/weekdayTool.js');
 
 
 module.exports.function = function search_weekday ( destination, where ) {
   
-  var findDay = weekdayTool.changeKoreantoUrl(weekday);
+  var findDay = tool.weekdayToKorean(weekday);
   var longt = destination.point.longitude
   var lat = destination.point.latitude
 

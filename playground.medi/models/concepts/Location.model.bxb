@@ -1,13 +1,4 @@
 structure (Location) {
   description (경도 위도 위치)
-  //extends (geo.GeoPoint)
-  // property (longtitude) {
-  //   type (Longitude)
-  //   min (Required) max (One)
-  // }
-  // property (langtitude) {
-  //   type (Latitude)
-  //   min (Required) max (One)
-  // }
   role-of (geo.GeoPoint)
 }

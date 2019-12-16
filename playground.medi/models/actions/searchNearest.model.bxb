@@ -1,5 +1,5 @@
-action (search_nearest) {
-  description (search nearest)
+action (searchNearest) {
+  description (사용자 주위에서 가장 가까운 기관을 찾습니다)
   type(Search)
   collect {
     computed-input (curlocation) {

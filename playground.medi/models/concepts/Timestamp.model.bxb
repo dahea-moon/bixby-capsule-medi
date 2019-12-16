@@ -1,4 +1,0 @@
-structure (Timestamp) {
-  description (사용자가 원하는 시각)
-  role-of (time.Time)
-}

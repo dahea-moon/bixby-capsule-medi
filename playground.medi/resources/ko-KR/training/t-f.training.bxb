@@ -1,0 +1,5 @@
+train (t-fh522oxpdo7t13x78tomb35er) {
+  utterance ("[g:searchBasedonDestination] (광진구)[v:geo.SubLocalityOneName] (치과)[v:Where:치과] 어디있어")
+  plan (dY67CsJAEEVvfNtaKFj4ARbp/AAfWIkKFtZrdjQDyaxkNwH/3lEJKmI3c86dB/oYpyY7X0tJUlu6OCfL8ZZMQT54TH+dV5ekC+PJOllpisUEdoLRb/aYUkEYVFzFF3Lx1ijdO5aAWc2WTnwoyiS85bpw+dzmLKxGd1e04or948akHvvjh7U/lKeNS0zG4bYTwrjmaxb7z33zxz/oIUIDTbTQRgdd7aEk+iAR8GRQ9qqbzxlN3gE=)
+  last-modified (1576486106679)
+}

@@ -1,0 +1,5 @@
+train (t-gesra34k4e6mur3hpy95rbnoa) {
+  utterance ("[g:searchBasedonDestinationTime] (역삼역)[v:geo.PlaceName] (오전10시)[v:time.DateTimeExpression] (약국)[v:Where:약국] 알려줘")
+  plan (bY7NCsIwEISnWn+uiijoO+QhpF5LEcHz0q4m0CalSYsnn91tsCfd0843w+5gjaOm+tH2ttRV71TDlVE5U8c+eKhfz4tX6jN5rpzNJGUsBePszTSMw2/+rrljbAczqCc7lZPQwhkbsJvYlb2rBy5qKhn7f/RN2Ew8gvEMTiMK8ldlFHgscHm1UtxLHayQYIY5UiywFAXRyVePGyKZJo3pmPsA)
+  last-modified (1576482263415)
+}

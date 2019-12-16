@@ -4,11 +4,11 @@ var dates = require('dates');
 var tool = require('lib/tool.js');
 
 
-module.exports.function = function searchBasedDestination (destination, timestamp, where) {
+module.exports.function = function searchBasedDestination (destination, dateTimeExpression, where) {
   var curtime = new dates.ZonedDateTime.now();
   var userday = curtime.getDayOfWeek();
-  var usertime = timestamp.time.hour;
-  var usermin = timestamp.time.minute;
+  var usertime = dateTimeExpression.dateTime.time.hour;
+  var usermin = dateTimeExpression.dateTime.time.minute;
   if (usermin < 10) {
     var usermin = '0' + usermin
 
@@ -125,4 +125,5 @@ module.exports.function = function searchBasedDestination (destination, timestam
       })
     }
   return nearests;
+}
 }
