@@ -1,0 +1,43 @@
+layout-macro-def (nearest_mapcard) {
+  params {
+    param (info) {
+      type (Nearests)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    map-card {
+      title-area {
+        slot1 {
+          text {
+            value ("")
+            style (Title_S)
+          }
+        }
+      }
+      markers {
+        marker {
+          geo (info.location)
+          icon ("/img/icons/red-map-marker.png")
+          width (20)
+          height (20)
+          anchor-x (5)
+          anchor-y (15)
+          rotation (0)
+        }
+        marker {
+          geo (info.curlocation)
+          icon ("/img/icons/green-map-marker.png")
+          width (15)
+          height (20)
+          anchor-x (5)
+          anchor-y (15)
+          rotation (0)
+        }
+      }
+    }
+     
+  } 
+}
+    

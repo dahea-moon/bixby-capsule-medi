@@ -1,0 +1,13 @@
+result-view {
+  match: Nearests (result)
+
+  render {
+    if (size(result) == 1) {
+      layout-macro (nearest_result) {
+        param (info) {
+          expression (result)
+        }
+      }
+    }
+  }
+}

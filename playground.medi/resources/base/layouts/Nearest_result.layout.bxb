@@ -13,7 +13,7 @@ layout-macro-def (nearest_result) {
           title-area {
             slot1 {
               text {
-                value ("#{value(info.name)}")
+                value ("")
                 style (Title_S)
               }
             }
@@ -39,14 +39,26 @@ layout-macro-def (nearest_result) {
             }
           }
         }
-        single-line {
-          text {
-            value ("#{value(info.address)}")
+        title-area {
+          halign (Start)
+          slot1 {
+            text {
+              value ("#{value(info.name)}")
+            }
           }
-        }
-        single-line {
-          text {
-            value ("#{value(info.call)}")
+          slot2 {
+              paragraph {
+                  value {
+                      template ("#{value(info.address)}")
+                  }
+              }
+          }
+          slot3 {
+              paragraph {
+                  value {
+                      template ("#{value(info.call)}")
+                  }
+              }
           }
         }
         single-line {
@@ -61,7 +73,5 @@ layout-macro-def (nearest_result) {
         }   
       }
     }
-    
   }
 }
-    

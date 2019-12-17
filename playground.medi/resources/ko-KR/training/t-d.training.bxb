@@ -3,3 +3,8 @@ train (t-dcna8xw8n1vpyo2utezvitoua) {
   plan (bYy9DgIhEIQHz59aYzTxESx4CGN9udhYb2AVEgRzcJQ+u4hedW41882XxQoHQ+72HLwyegjywdrKlqnnmCKO0y2WTZkTRdbBn4tlPSUbPPZT92q4Z2yyzfLOQbZUaBesT9iO7MIxuMydI8XY/aMvwnrkFXzeYAmBGRrMsSgZpYlfE0Dt32uqV4w3)
   last-modified (1576484415556)
 }
+train (t-dxgn1hfijn89855dt2t6smwkn) {
+  utterance ("[g:searchBasedonDestination] (노원구)[v:geo.SubLocalityOneName] (소아과)[v:Where:소아과] 보여줘")
+  plan (dY67CsJAEEVvfNtaKFj4ARbp/AAfWIkKFtZrdjQDyaxkNwH/3lEJKmI3c86dB/oYpyY7X0tJUlu6OCfL8ZZMQT54TH+dV5ekC+PJOllpisUEdoLRb/aYUkEYVFzFF3Lx1ijdO5aAWc2WTnwoyiS85bpw+dzmLKxGd1e04or948akHvvjh7U/lKeNS0zG4bYTwrjmaxb7z33zxz/oIUIDTbTQRgdd7aEk+iAR8GRQ9qqbzxlN3gE=)
+  last-modified (1576558918508)
+}
