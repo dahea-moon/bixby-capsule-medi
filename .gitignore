@@ -1,4 +1,4 @@
-.properties
+*.properties
 venv/
 staticfiles
 .env
