@@ -31,7 +31,7 @@ tartget: bixby-device-lang-con
 
 ​		
 
-## 4. endpoint in JS
+## 4. Set Endpoint in JS
 
 1. In code dir, make action.js file
 2. Define function
