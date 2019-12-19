@@ -1,0 +1,27 @@
+result-view {
+	match: Nearests (this)
+	
+	message (자세히 알고싶은 기관을 선택해주세요)
+	
+	render {
+    if (size(this) > 1) {
+    list-of (this) {
+        where-each (one) {
+          layout-macro (nearest_mapcard) {
+            param (info) {
+              expression (one)
+            }
+          }
+        }
+     }
+    } else-if (size(this) == 1) {
+      layout-macro (nearest_result) {
+        param(info) {
+          expression (this)
+        }
+      }
+    } else {
+      nothing
+    }
+	}
+}

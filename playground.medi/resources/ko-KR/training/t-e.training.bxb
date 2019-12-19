@@ -1,0 +1,5 @@
+train (t-er94qqf5kmg6o5fyti0oekit5) {
+  utterance ("[g:searchNearest] (달빛어린이병원)[v:Where:달빛어린이병원] 알려줘")
+  plan (Y2BmkMpIzEkrKM1LzkgpzdfLTU3J1PNLTSxKLS4pZpDHlCsGyiVnQFUwiGMqCM9ILUplYGJgBGIGIMnIAAJQPgA=)
+  last-modified (1576665137700)
+}

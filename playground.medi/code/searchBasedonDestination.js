@@ -41,6 +41,7 @@ module.exports.function = function searchBasedDestination (destination, where) {
             'longitude': aed.longt,
             'latitude': aed.langt
           },
+        'curlocation': curlocation
       }
       nearests.push(info);
     })
@@ -53,79 +54,461 @@ module.exports.function = function searchBasedDestination (destination, where) {
         'location': {
           'longitude': sooyu.longt,
           'latitude': sooyu.langt
-        }
+        },
+        'curlocation': curlocation
       }
       nearests.push(info)
   })
-
   } else if (target == 'moonlight') {
-      var openduty = 'duty' + userday + '_open'; 
-      var closeduty = 'duty' + userday + '_close';
+      if (userday == 1) {
       response.forEach(function(moon) {
       if (moon.duty8 == 'true') {
-        let info = {
-          'name': moon.name,
-          'address': moon.address,
-          'call': moon.call,
-          'open': moon.openduty,
-          'close': moon.closeduty,
-          'holiday_open': moon.duty8_open,
-          'holiday_close': moon.duty8_close,
-          'location' : {
-            'longitude': moon.longt,
-            'latitude': moon.langt
-          }
-        }
-        nearests.push(info)
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'holiday_open': moon.duty8_open,
+      'holiday_close': moon.duty8_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
       } else {
       let info = {
       'name': moon.name,
       'address': moon.address,
       'call': moon.call,
-      'open': moon.openduty,
-      'close': moon.closeduty,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
       'location' : {
-        'longitude': moon.longt,
-        'latitude': moon.langt
+      'longitude': moon.longt,
+      'latitude': moon.langt
       }
-        }
+      }
       nearests.push(info)
+      } } )
+      } else if (userday == 2) {
+      response.forEach(function(moon) {
+      if (moon.duty8 == 'true') {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'holiday_open': moon.duty8_open,
+      'holiday_close': moon.duty8_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
       }
-      })
-    } else {
-      var openduty = 'duty' + userday + '_open'; 
-      var closeduty = 'duty' + userday + '_close';
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 3) {
+      response.forEach(function(moon) {
+      if (moon.duty8 == 'true') {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'holiday_open': moon.duty8_open,
+      'holiday_close': moon.duty8_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 4) {
+      response.forEach(function(moon) {
+      if (moon.duty8 == 'true') {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'holiday_open': moon.duty8_open,
+      'holiday_close': moon.duty8_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 5) {
+      response.forEach(function(moon) {
+      if (moon.duty8 == 'true') {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'holiday_open': moon.duty8_open,
+      'holiday_close': moon.duty8_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 6) {
+      response.forEach(function(moon) {
+      if (moon.duty8 == 'true') {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'holiday_open': moon.duty8_open,
+      'holiday_close': moon.duty8_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 7) {
+      response.forEach(function(moon) {
+      if (moon.duty8 == 'true') {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'holiday_open': moon.duty8_open,
+      'holiday_close': moon.duty8_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': moon.name,
+      'address': moon.address,
+      'call': moon.call,
+      'open': moon.duty1_open,
+      'close': moon.duty1_close,
+      'location' : {
+      'longitude': moon.longt,
+      'latitude': moon.langt
+      }
+      }
+      nearests.push(info)
+      } } ) }
+      } else {
+      if (userday == 1) {
       response.forEach(function(hospital) {
-        if (hospital.duty8 == 'true') {
-          let info = {
-            'name': hospital.name,
-            'address': hospital.address,
-            'call': hospital.call,
-            'open': hospital.openduty,
-            'close': hospital.closeduty,
-            'holiday_open': hospital.duty8_open,
-            'holiday_close': hospital.duty8_close,
-            'location' : {
-              'longitude': hospital.longt,
-              'latitude': hospital.langt
-            }
-          }
-          nearests.push(info)
-        } else {
-          let info = {
-          'name': hospital.name,
-          'address': hospital.address,
-          'call': hospital.call,
-          'open': hospital.openduty,
-          'close': hospital.closeduty,
-          'location' : {
-            'longitude': hospital.longt,
-            'latitude': hospital.langt
-          }
-        }
-        nearests.push(info)
+      if (hospital.duty8 == 'true') {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'holiday_open': hospital.duty8_open,
+      'holiday_close': hospital.duty8_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
       }
-      })
-    }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 2) {
+      response.forEach(function(hospital) {
+      if (hospital.duty8 == 'true') {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'holiday_open': hospital.duty8_open,
+      'holiday_close': hospital.duty8_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 3) {
+      response.forEach(function(hospital) {
+      if (hospital.duty8 == 'true') {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'holiday_open': hospital.duty8_open,
+      'holiday_close': hospital.duty8_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 4) {
+      response.forEach(function(hospital) {
+      if (hospital.duty8 == 'true') {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'holiday_open': hospital.duty8_open,
+      'holiday_close': hospital.duty8_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 5) {
+      response.forEach(function(hospital) {
+      if (hospital.duty8 == 'true') {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'holiday_open': hospital.duty8_open,
+      'holiday_close': hospital.duty8_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 6) {
+      response.forEach(function(hospital) {
+      if (hospital.duty8 == 'true') {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'holiday_open': hospital.duty8_open,
+      'holiday_close': hospital.duty8_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      } else if (userday == 7) {
+      response.forEach(function(hospital) {
+      if (hospital.duty8 == 'true') {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'holiday_open': hospital.duty8_open,
+      'holiday_close': hospital.duty8_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } else {
+      let info = {
+      'name': hospital.name,
+      'address': hospital.address,
+      'place': hospital.place,
+      'call': hospital.call,
+      'open': hospital.duty1_open,
+      'close': hospital.duty1_close,
+      'location' : {
+      'longitude': hospital.longt,
+      'latitude': hospital.langt
+      }
+      }
+      nearests.push(info)
+      } } )
+      }}
   return nearests;
 }

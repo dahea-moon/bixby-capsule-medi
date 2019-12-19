@@ -1,37 +1,28 @@
 var http = require('http');
 var config = require('config');
 var console = require('console');
-var dates = require('dates');
 var tool = require('lib/tool.js');
 
 
-module.exports.function = function search_nearest (curlocation, where) {
-
-  var curtime = new dates.ZonedDateTime.now();
-  var userday = curtime.getDayOfWeek();
-  var usertime = curtime.getHour();
-  var curmin = curtime.getMinute();
-  if (curmin < 10) {
-    var usermin = '0' + curmin
-  } else {
-    var usermin = curmin
-  }
-  var userlongt = curlocation.longitude;
-  var userlat = curlocation.latitude;
+module.exports.function = function search_weekday ( destination, where ) {
+  
+  var findDay = tool.weekdayToKorean(weekday);
+  var longt = destination.point.longitude
+  var lat = destination.point.latitude
 
   var target = tool.changeKoreantoUrl(where);
 
   const response = http.getUrl('http://bixby-medi.herokuapp.com/api/' + target + '/search_nearest/', {
       format: 'json',
       query: {
-        longtitude: userlongt,
-        latitude: userlat,
-        curday: userday,
-        curtime: usertime + ':' + usermin,
-        // hospital 에 들어갈 foreignkey 값 줘야 함
+        longtitude: longt,
+        latitude: lat,
+        curday: findDay,
+
+        curtime: '10:00',
       }
     });
-  
+
   let nearests = [];
   if (target == 'AED') {
     response.forEach(function(aed){

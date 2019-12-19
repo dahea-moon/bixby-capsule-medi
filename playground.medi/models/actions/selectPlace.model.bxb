@@ -1,0 +1,17 @@
+action (selectPlace) {
+  type (Search)
+  description (사용자가 선택한 기관의 세부 정보를 보여준다)
+  collect {
+    computed-input (place) {
+      type (Nearests)
+      min (Required) max (One)
+      compute {
+        intent {
+          goal: Nearests
+          value-set: Nearests {$expr("getPreviousPage('Nearests')")}
+        }
+      }
+    }
+  }
+  output (Nearests)
+}

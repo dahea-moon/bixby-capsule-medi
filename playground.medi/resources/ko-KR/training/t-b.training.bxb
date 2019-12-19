@@ -1,0 +1,5 @@
+train (t-bn395b89sc0o8ktdj5eyep9ca) {
+  utterance ("[g:searchNearest] (약국)[v:Where:약국] 찾아줘")
+  plan (Y2BmkMpIzEkrKM1LzkgpzdfLTU3J1PNLTSxKLS4pZpDHlCsGyiVnQFUwiGMqCM9ILUplYGJgBGIGIMnIAAJQPgA=)
+  last-modified (1576665316996)
+}

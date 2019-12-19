@@ -42,35 +42,57 @@ layout-macro-def (nearest_result) {
         title-area {
           halign (Start)
           slot1 {
-            text {
+            if (exists(info.name)) {
+              text {
               value ("#{value(info.name)}")
+              style (Title_M)
+              } 
+            } else {
+              text {
+              value ("#{value(info.address)}")
+              }
             }
           }
-          slot2 {
-              paragraph {
-                  value {
-                      template ("#{value(info.address)}")
-                  }
-              }
-          }
-          slot3 {
-              paragraph {
-                  value {
-                      template ("#{value(info.call)}")
-                  }
-              }
-          }
         }
+        divider
         single-line {
           text {
-            value ("평일: #{value(info.open)} ~ #{value(info.close)}")
+            value (상세정보)
+            style (Title_XS)
           }
+          
         }
-        single-line {
-          text {
+        if (exists(info.place) and exists(info.place)) {
+          paragraph {
+              value ("위치: #{value(info.place)}")
+            }
+        } 
+        if (exists(info.address)) {
+          paragraph {
+              value ("주소: #{value(info.address)}")
+            }
+        } 
+        if (exists(info.call)) {
+          paragraph {
+              value ("전화번호: #{value(info.call)}")
+            }
+        } 
+        if (exists(info.manager)) {
+          paragraph {
+              value ("관리자 전화번호: #{value(info.manager)}")
+            }
+        }
+        if (exists(info.open) and exists(info.close)) {
+          paragraph {
+              value ("오늘 영업시간: #{value(info.open)} ~ #{value(info.close)}")
+            }
+        }
+        if (exists(info.holiday_open) and exists(info.holiday_close)) {
+          paragraph {
             value ("공휴일: #{value(info.holiday_open)} ~ #{value(info.holiday_close)}")
           }
-        }   
+        }
+           
       }
     }
   }

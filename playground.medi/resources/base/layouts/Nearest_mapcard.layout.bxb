@@ -10,9 +10,16 @@ layout-macro-def (nearest_mapcard) {
     map-card {
       title-area {
         slot1 {
-          text {
-            value ("")
-            style (Title_S)
+          if (exists(info.name)) {
+            text {
+              value ("#{value(info.name)}")
+              style (Title_S)
+            }
+          } else {
+            text {
+              value ("#{value(info.address)}")
+              style (Title_S)
+            }
           }
         }
       }
